@@ -31,7 +31,7 @@ function App() {
           </div>
           <div className="button-container">
               <div className="special-characters-buttons">
-                <Specials displayContent={displayContent} clearDisplay={clearDisplay}/>
+                <Specials displayContent={displayContent} clearDisplay={clearDisplay} />
               </div>
               <div className="numbers-buttons">
                 <Numbers displayContent={displayContent} />
