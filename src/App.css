@@ -1,0 +1,14 @@
+.container {
+    background: #BB1233;
+    max-width: 500px;
+    height: 200%;
+
+}
+.App {
+    display:flex;
+}
+.display {
+    width: 80%;
+    height: 50%;
+    background: #2D2829;
+}

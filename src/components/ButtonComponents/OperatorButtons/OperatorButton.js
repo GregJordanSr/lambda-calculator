@@ -3,7 +3,7 @@ import React from "react";
 const OperatorButton = props => {
   return (
     <>
-      {props.propName.value}
+     <h1 onClick={() => props.functionVar(props.propName.value)}>{props.propName.value}</h1> 
       
     </>
   );
