@@ -1,6 +1,6 @@
 import React, { useState } from "react";
 import { operators} from '../../../data';
-import OperatorButtons from './OperatorButton';
+import OperatorButton from './OperatorButton';
 
 //import any components needed
 
@@ -12,7 +12,7 @@ const Operators = () => {
   return (
     <div>
       {calcOperator.map( (operator, i) => {
-        return <OperatorButtons key={operator} i={i} />
+        return <OperatorButton propName={operator} index={i}  />
       })}
     </div>
   );
