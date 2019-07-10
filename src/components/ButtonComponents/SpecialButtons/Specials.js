@@ -12,7 +12,7 @@ const [calcSpecial, setSpecial] = useState(specials);
   return (
     <div className="special-map">
       {calcSpecial.map( (special, i) => {
-          return <SpecialButton  key={i} value={special} functionVar={props.displayContent} />
+          return <SpecialButton  key={i} value={special} functionVar={props.displayContent} clearDisplay={props.clearDisplay} />
       })}
     </div>
   );

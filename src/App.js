@@ -16,6 +16,10 @@ function App() {
   const displayContent = (btn) => {
     setDisplay(useDisplay + btn ) 
   }
+
+  const clearDisplay = () => {
+    setDisplay("");
+  }
  
  
   return (
@@ -25,14 +29,16 @@ function App() {
           <div className="display">
             <Display displayProps={useDisplay}/>
           </div>
-          <div className="special-characters-buttons">
-            <Specials displayContent={displayContent} />
-          </div>
-          <div className="numbers-buttons">
-            <Numbers displayContent={displayContent} />
-          </div>
-          <div className="operator-buttons">
-            <Operators displayContent={displayContent}/>
+          <div className="button-container">
+              <div className="special-characters-buttons">
+                <Specials displayContent={displayContent} clearDisplay={clearDisplay}/>
+              </div>
+              <div className="numbers-buttons">
+                <Numbers displayContent={displayContent} />
+              </div>
+              <div className="operator-buttons">
+                <Operators displayContent={displayContent}/>
+              </div>
           </div>
       </div>
     </div>

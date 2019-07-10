@@ -4,8 +4,9 @@ import "../../../App.css"
 const SpecialButton =props => {
   return (
     <>
-      <h1 onClick={() => props.functionVar(props.value)}>{props.value}</h1>
+      <button className="btn spec-btn" onClick={() => props.value === "C" ? props.clearDisplay() : props.functionVar(props.value)}>{props.value}</button>
     </>
   );
 };
 export default SpecialButton;
+{/* {props.value === "C" ? props.clearDisplay()  : props.value} */}
